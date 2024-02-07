@@ -1,0 +1,41 @@
+.burgerMenu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: none;
+
+  .burgerText {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: black;
+  }
+  .drawing div {
+    width: 35px;
+    height: 3px;
+    margin: 5px;
+    background-color: black;
+    transition: all 0.3s ease;
+    z-index: 9999;
+  }
+}
+
+.isOpen {
+  .drawing .line1 {
+    background-color: white;
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .drawing .line2 {
+    opacity: 0;
+  }
+
+  .drawing .line3 {
+    background-color: white;
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}

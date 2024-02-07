@@ -1,0 +1,15 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  img {
+    width: 75px;
+  }
+
+  p {
+    font-size: 2rem;
+    line-height: 2.1rem;
+  }
+}
