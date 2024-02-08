@@ -1,0 +1,28 @@
+.hero {
+  height: 100vh;
+  padding-top: 10vh;
+  padding: 10vh calc(var(--website-side-padding) + 1rem) 0
+    calc(var(--website-side-padding) + 1rem);
+  background-image: url("https://s3-alpha-sig.figma.com/img/823b/481d/06b55cc29210908e0601e41f67cd6370?Expires=1708300800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=f7CVkFvMrwctkTKFVTEHD36wgA3LzjZUCRe61kgzS0nM63EL8Hcedhi4AV9opXojsdL7zjTGdAZ2yx2RsPCFgUoCMwyDkeqyTTc4zbdkROnQW8YxiFQIXJr78-HUjwcwQ8m9CuHWxMqYtd2QFjS7nI4tRy2xUr9lduaciO5ls4HWbB3em2JLGCopWdGIDcTLEQOCEPpE5slJ50POpF9lpIoiJthsXyhbscw2WcJ6SpuFDCLDd5JLO40NDRsxhn0zWtGBwnKiSU0lPRwoeFZPg5rAKLlLk8BnYInvBFnBHQjU-LKKByGc2f6pamgzLZl6pbrx-otxcLhcMurfYQZitQ__");
+  background-position: center;
+  background-size: cover;
+
+  .heroText {
+    padding-top: 15vh;
+
+    h1 {
+      font-size: 4rem;
+      line-height: 4rem;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2rem;
+      max-width: 535px;
+      margin-bottom: 20px;
+    }
+
+    span {
+      font-weight: bold;
+    }
+  }
+}

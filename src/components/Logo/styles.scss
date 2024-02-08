@@ -5,11 +5,15 @@
   gap: 10px;
 
   img {
-    width: 75px;
+    width: 50px;
   }
 
   p {
-    font-size: 2rem;
-    line-height: 2.1rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .isLightVariant {
+    color: #f1f1f1;
   }
 }

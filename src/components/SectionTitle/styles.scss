@@ -1,0 +1,14 @@
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 70px;
+
+  img {
+    width: 60px;
+  }
+
+  span {
+    font-size: 3rem;
+  }
+}

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 @font-face {
   font-family: "Futura";
   src: url("./assets/logos/Futura.ttc") format("truetype");
@@ -5,22 +7,25 @@
   font-style: normal;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 :root {
-  --primary-color-white: #ffffff
+  --primary-color-white: #ffffff;
   --primary-color-black: #1a1a1a;
   --secondary-color-purple: #93278f;
   --color-grey: #808080;
+  --website-side-padding: 3rem;
 
-  font-family: "Futura", sans-serif;
+  font-family: "Futura", "Roboto", sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #f1f1f1;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -31,22 +36,35 @@
   margin: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   color: black;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
-
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 

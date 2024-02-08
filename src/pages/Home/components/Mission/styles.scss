@@ -1,0 +1,31 @@
+.mission {
+  padding: var(--website-side-padding);
+  .content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      p {
+        max-width: 700px;
+        font-size: 1.2rem;
+      }
+    }
+
+    .images {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      img {
+        max-width: 800px;
+        border-radius: 6px;
+      }
+    }
+  }
+}
