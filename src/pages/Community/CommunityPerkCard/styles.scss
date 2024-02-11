@@ -1,0 +1,23 @@
+.community-perk-card {
+  padding: 1rem;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgb(12, 12, 12);
+
+  h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+
+    img {
+      width: 25px;
+    }
+  }
+
+  p {
+    opacity: 0.7;
+  }
+}

@@ -1,5 +1,6 @@
 .community {
-  background-color: var(--primary-color-black);
+  background-color: darken(#161940, 10%);
+  // background-color: var(--primary-color-black);
   color: #f1f1f1;
   padding: var(--website-side-padding);
   min-height: 100vh;
@@ -17,7 +18,7 @@
   .community-cards-container {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 125px;
 
     .content {
       max-width: 700px;
@@ -37,6 +38,11 @@
       p {
         font-size: 1.2rem;
       }
+
+      .buttons {
+        display: flex;
+        gap: 15px;
+      }
     }
 
     .cards-container {
@@ -44,5 +50,18 @@
       flex-direction: row-reverse;
       justify-content: end;
     }
+  }
+
+  .our-perks {
+    margin-top: 35px;
+    margin-left: 3rem;
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+
+  ul {
+    display: flex;
+    gap: 15px;
   }
 }

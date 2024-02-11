@@ -1,6 +1,12 @@
 import SectionTitle from '@/components/SectionTitle/SectionTitle'
 import CommunityPersonCard from './CommunityPersonCard/CommunityPersonCard';
+import CommunityPerkCard from './CommunityPerkCard/CommunityPerkCard';
 import TiagoImage from '@/assets/tiago.jpeg'
+import CollaborationIcon from '@/assets/collaboration.svg'
+import ImpactIcon from '@/assets/impact.svg'
+import InclusivityIcon from '@/assets/inclusivity.svg'
+import MentorshipIcon from '@/assets/mentorship.svg'
+import ResourcesIcon from '@/assets/resources.svg'
 
 import './styles.scss'
 import { useState } from 'react';
@@ -82,6 +88,38 @@ const people = [
     }
 ];
 
+const perks = [
+    {
+        id: 0,
+        icon: InclusivityIcon,
+        title: "Inclusivity",
+        description: "We thrive on diversity and inclusivity, nurturing an environment where everyone's voice is heard and respected."
+    },
+    {
+        id: 1,
+        icon: MentorshipIcon,
+        title: "Mentorship",
+        description: "Our seasoned mentors provide invaluable guidance and support, helping you navigate your creative and entrepreneurial journey."
+    },
+    {
+        id: 2,
+        icon: CollaborationIcon,
+        title: "Collaboration",
+        description: "Connect with like-minded individuals, form partnerships, and create lifelong bonds with fellow visionaries."
+    },
+    {
+        id: 3,
+        icon: ResourcesIcon,
+        title: "Resources",
+        description: "Access a treasure trove of tools, tech, and knowledge to fuel your creative and IT endeavors."
+    },
+    {
+        id: 4,
+        icon: ImpactIcon,
+        title: "Impact",
+        description: "Make a difference in the world. Your ideas, your art, and your innovations can change lives and make the world a better place."
+    }
+];
 const Community = () => {
     const [selectedPeople, setSelectedPeople] = useState(people);
     const [selectedPerson, setSelectedPerson] = useState(people[people.length - 1]);
@@ -112,12 +150,19 @@ const Community = () => {
                     <h3>{selectedPerson.name} <span>({selectedPerson.pronouns})</span></h3>
                     {selectedPerson.paragraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
                     <p>Would you like to meet more creatives like {selectedPerson.name.split(" ")[0]}?</p>
-                    <Button text='Join our community' />
+                    <div className="buttons">
+                        <Button text='Join our community' />
+                        <Button variant="secondary" text={`Connect with ${selectedPerson.name.split(" ")[0]}`} />
+                    </div>
                 </div>
                 <div className="cards-container">
                     {selectedPeople.map(person => <CommunityPersonCard clickEvent={() => organizeArrayOfPeople(person.id)} key={person.id} image={person.image} name={person.name} pronouns={person.pronouns} description={person.description} />)}
                 </div>
             </div>
+            <h3 className='our-perks'>Our community perks</h3>
+            <ul>
+                {perks.map((perk) => <CommunityPerkCard key={perk.id} icon={perk.icon} title={perk.title} description={perk.description} />)}
+            </ul>
         </section>
     )
 }

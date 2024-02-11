@@ -1,8 +1,8 @@
 import './styles.scss'
 
-const Button = ({ text = 'Lorem Impsum' }) => {
+const Button = ({ variant, text = 'Lorem Impsum' }) => {
     return (
-        <button className='default-button'>{text}</button>
+        <button className={`default-button ${variant === 'secondary' ? 'variant-secondary' : ''}`}>{text}</button>
     )
 }
 

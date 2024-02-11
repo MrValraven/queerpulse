@@ -24,4 +24,21 @@
     background-color: #93278f;
     box-shadow: 0px 2px 2px 0px #0000003d;
   }
+
+  &.variant-secondary {
+    background-color: darken(#161940, 10%);
+    border: 1px solid;
+
+    &:hover {
+      background-color: darken(#161940, 13%);
+      color: #f0f0f0;
+      box-shadow: 0px 0px 8px 0px #0000001f;
+    }
+
+    &:focus {
+      background-color: darken(#161940, 16%);
+      color: #f0f0f0;
+      box-shadow: 0px 2px 2px 0px #0000003d;
+    }
+  }
 }

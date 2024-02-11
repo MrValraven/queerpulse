@@ -18,6 +18,15 @@ const Mission = () => {
                     <img src={Image} alt="" />
                 </div>
             </div>
+            <h2>Our core values</h2>
+            <ul>
+                <li>Diversity and Inclusion: We believe that diversity of perspectives is the catalyst for creativity and innovation. We are dedicated to creating a space where all voices are heard and respected.</li>
+                <li>
+                    Unlimited Creativity: We don't believe in boundaries for imagination. We encourage the free expression of creativity in all its forms, whether in the arts or in technology development.
+                </li>
+                <li>Mentorship and Support: We understand that the creative journey can be challenging, so we offer personalized mentoring and support to help our members reach their full potential.</li>
+                <li>Strong Community: We value the creation of lasting and collaborative relationships. Our community is our greatest asset, where ideas flow, and partnerships thrive.</li>
+            </ul>
         </section>
     )
 }
