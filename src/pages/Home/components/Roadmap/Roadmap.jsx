@@ -20,6 +20,7 @@ const Roadmap = () => {
                 <li>Job Board</li>
                 <li>Collaborative Art and Initiatives: Through collaborative art projects, we address LGBTQ+ issues and advocate for equality. Art has a unique power to communicate complex ideas and emotions.</li>
                 <li>Community Engagement: Queer Pulse members actively participate in LGBTQ+ marches, awareness campaigns, and community outreach programs. We believe in being visible allies and advocates in our local and global communities.</li>
+                <li>Launch of "Coloring the Rainbow" - a Queer inclusive digital coloring book</li>
             </ul>
             <h2>Phase 3</h2>
             <ul>
