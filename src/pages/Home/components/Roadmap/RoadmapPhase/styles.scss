@@ -1,0 +1,105 @@
+.roadmap-phase {
+  display: flex;
+  width: 700px;
+  .progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .progress-header {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: 15px;
+      margin-left: -35px;
+
+      .phase-number {
+        background: #525151;
+        height: 75px;
+        width: 75px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -45px;
+
+        z-index: 2;
+      }
+
+      .phase-number-complete {
+        background: linear-gradient(
+          to left,
+          darken(#f2709c, 10%),
+          var(--secondary-color-purple)
+        );
+        box-shadow: 0 3px 3px -5px darken(#f2709c, 10%),
+          0 2px 5px darken(#f2709c, 10%);
+        border: none;
+      }
+
+      .text {
+        margin-top: -45px;
+
+        h4 {
+          font-weight: 400;
+          font-size: 1rem;
+          opacity: 0.5;
+        }
+      }
+    }
+
+    .progress-body {
+      display: flex;
+      width: 100%;
+    }
+
+    .progress {
+      background-color: #525151;
+      border-radius: 20px;
+      position: relative;
+      margin: 15px 0;
+      min-width: 40px;
+      margin-top: -20px;
+    }
+
+    .progress-done {
+      background: linear-gradient(
+        to left,
+        darken(#f2709c, 10%),
+        var(--secondary-color-purple)
+      );
+      box-shadow: 0 3px 3px -5px darken(#f2709c, 10%),
+        0 2px 5px darken(#f2709c, 10%);
+      border-radius: 20px;
+      width: 100%;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 70%;
+      opacity: 1;
+      transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+
+    li {
+      color: #68707c;
+      font-size: 1.1rem;
+    }
+
+    .objective-complete {
+      color: #81c241;
+    }
+  }
+}

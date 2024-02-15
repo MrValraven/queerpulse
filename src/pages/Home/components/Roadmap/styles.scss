@@ -1,4 +1,15 @@
 .roadmap {
   color: white;
   background-color: darken(#161940, 10%);
+
+  .advocacy {
+    margin-bottom: 100px;
+  }
+
+  .phases {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

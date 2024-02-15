@@ -1,7 +1,8 @@
 import SectionTitle from '@/components/SectionTitle/SectionTitle'
 import CommunityPersonCard from './CommunityPersonCard/CommunityPersonCard';
 import CommunityPerkCard from './CommunityPerkCard/CommunityPerkCard';
-import TiagoImage from '@/assets/tiago.jpeg'
+import TiagoImage from '@/assets/tiago.jpeg';
+import MartaImage from '@/assets/marta.jpg';
 import CollaborationIcon from '@/assets/collaboration.svg'
 import ImpactIcon from '@/assets/impact.svg'
 import InclusivityIcon from '@/assets/inclusivity.svg'
@@ -63,14 +64,14 @@ const people = [
     },
     {
         id: 4,
-        name: "Jamie Lee",
-        pronouns: "xe/xem",
-        image: "https://images.pexels.com/photos/13098481/pexels-photo-13098481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        description: "Film director and LGBTQ+ activist, Jamie creates groundbreaking documentaries that shed light on queer experiences and struggles.",
+        name: "Marta Mealha",
+        pronouns: "she/they",
+        image: MartaImage,
+        description: "Designer, illustrator, and music producer, currently living in Lisbon. She's a proud queer woman who works as a full-time graphic designer.",
         paragraphs: [
-            "Hey, I'm Jamie Lee — a groundbreaking film director and devoted LGBTQ+ activist.",
-            "My cinematic endeavors revolve around crafting documentaries that illuminate the experiences and struggles of the queer community.",
-            "Through the lens of storytelling, I aspire to create empathy and understanding, inviting you to join me in making a lasting impact by showcasing the diversity and resilience of LGBTQ+ individuals on the big screen."
+            "Hi, I'm Marta! Your friendly neighborhood music-crazed gamer!",
+            "I completed my Master’s Degree in Marketing at ISCTE Business School, leading the way to find myself in the world of design, and taking the most pleasure in it. That was my chance to enroll in the Graphic Design and UX/UI courses at Lisbon School of Design.",
+            "Thus, I discovered my passion for working with Adobe’s Illustrator, inDesign, and Photoshop, to create brand identity, magazines, captivating visuals, videos, and mockups, among others. Connecting my manual illustration skills with the digital ones has been fulfilling me greatly, taking on new challenges and allowing me to learn every day."
         ]
     },
     {
